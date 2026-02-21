@@ -1,7 +1,7 @@
-import Sidebar from "@/components/Sidebar";
-import StatCard from "@/components/StatCard";
-import AISuggestions from "@/components/AISuggestions";
-import { stats } from "@/lib/data";
+import Sidebar from "../../components/Sidebar";
+import StatCard from "../../components/StatCard";
+import AISuggestions from "../../components/AISuggestions";
+import { stats } from "../../lib/data";
 
 export default function Dashboard() {
   return (
