@@ -1,16 +1,37 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4xl font-bold mb-4">
-        Welcome to Nexora 🚀
+    <div
+      style={{
+        background: "#0F0F1A",
+        minHeight: "100vh",
+        color: "white",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <h1 style={{ fontSize: "40px", color: "#8B5CF6" }}>
+        Nexora AI 🚀
       </h1>
+
       <Link
-        href="/dashboard"
-        className="bg-blue-600 px-6 py-3 rounded-xl hover:bg-blue-700 transition"
+        href="/ai-campaign"
+        style={{
+          marginTop: "30px",
+          background: "#6D28D9",
+          padding: "14px 28px",
+          borderRadius: "12px",
+          color: "white",
+          textDecoration: "none",
+          fontWeight: "bold",
+        }}
       >
-        Go to Dashboard
+        Launch AI Campaign
       </Link>
     </div>
   );
