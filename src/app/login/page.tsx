@@ -1,25 +1,67 @@
-export default function Login() {
+"use client";
+
+export default function LoginPage() {
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="bg-[#1e293b] p-8 rounded-2xl w-96">
-        <h2 className="text-2xl font-bold mb-6 text-center">
-          Login to Nexora
+    <div
+      style={{
+        background: "#0F0F1A",
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        color: "white",
+        fontFamily: "sans-serif",
+      }}
+    >
+      <div
+        style={{
+          background: "#1A1A2E",
+          padding: "40px",
+          borderRadius: "16px",
+          width: "320px",
+          border: "1px solid #6D28D9",
+        }}
+      >
+        <h2 style={{ color: "#8B5CF6", marginBottom: "20px" }}>
+          تسجيل الدخول إلى نكسورا 🚀
         </h2>
 
         <input
-          type="email"
-          placeholder="Email"
-          className="w-full p-3 mb-4 rounded bg-[#0f172a] border border-gray-600"
+          placeholder="البريد الإلكتروني"
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginBottom: "15px",
+            borderRadius: "8px",
+            border: "none",
+          }}
         />
 
         <input
           type="password"
-          placeholder="Password"
-          className="w-full p-3 mb-6 rounded bg-[#0f172a] border border-gray-600"
+          placeholder="كلمة المرور"
+          style={{
+            width: "100%",
+            padding: "10px",
+            marginBottom: "20px",
+            borderRadius: "8px",
+            border: "none",
+          }}
         />
 
-        <button className="w-full bg-blue-600 py-3 rounded-xl hover:bg-blue-700">
-          Login
+        <button
+          style={{
+            width: "100%",
+            background: "#6D28D9",
+            padding: "12px",
+            borderRadius: "10px",
+            border: "none",
+            color: "white",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
+        >
+          تسجيل الدخول
         </button>
       </div>
     </div>
