@@ -1,49 +1,65 @@
 "use client";
 
 import { useState } from "react";
-import Sidebar from "@/components/Sidebar";
+import Sidebar from "../../components/Sidebar";
 
 export default function AICampaign() {
   const [loading, setLoading] = useState(false);
-  const [campaign, setCampaign] = useState("");
+  const [campaign, setCampaign] = useState<string | null>(null);
 
-  const generateCampaign = async () => {
+  const generateCampaign = () => {
     setLoading(true);
 
     setTimeout(() => {
-      setCampaign(`
-🔥 Headline:
-Boost Your Sales in 7 Days with AI Optimization
+      setCampaign(`🔥 Headline:
+Boost Your Store Sales with AI
 
 📝 Description:
-Our AI-powered system analyzes your store data and creates high-converting ads automatically.
+Nexora AI analyzes your Salla store and creates high-converting ads automatically.
+
+🎯 Target:
+Smart segmentation based on customer behavior.
 
 🚀 CTA:
-Start Scaling Now
-      `);
-
+Launch Campaign Now`);
       setLoading(false);
     }, 1500);
   };
 
   return (
-    <div className="flex bg-[#0F0F1A] text-white min-h-screen">
+    <div style={{ display: "flex", background: "#0F0F1A", color: "white", minHeight: "100vh" }}>
       <Sidebar />
 
-      <div className="flex-1 p-10">
-        <h1 className="text-3xl font-bold text-purple-400 mb-8">
+      <div style={{ flex: 1, padding: "40px" }}>
+        <h1 style={{ fontSize: "28px", color: "#8B5CF6", marginBottom: "30px" }}>
           AI Campaign Generator
         </h1>
 
         <button
           onClick={generateCampaign}
-          className="bg-purple-600 hover:bg-purple-700 transition-all px-6 py-3 rounded-xl font-semibold"
+          style={{
+            background: "#6D28D9",
+            padding: "12px 24px",
+            borderRadius: "12px",
+            border: "none",
+            color: "white",
+            fontWeight: "bold",
+            cursor: "pointer",
+          }}
         >
           {loading ? "Generating..." : "Generate AI Campaign"}
         </button>
 
         {campaign && (
-          <div className="mt-8 bg-purple-900/20 p-6 rounded-2xl shadow-lg whitespace-pre-line">
+          <div
+            style={{
+              marginTop: "30px",
+              background: "rgba(139, 92, 246, 0.1)",
+              padding: "20px",
+              borderRadius: "16px",
+              whiteSpace: "pre-line",
+            }}
+          >
             {campaign}
           </div>
         )}
