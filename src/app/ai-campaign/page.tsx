@@ -1,6 +1,6 @@
 export default function AICampaign() {
-   (
-    <div
+  return (
+    <div></div>
       style={{
         backgroundColor: "#0F0F1A",
         minHeight: "100vh",
