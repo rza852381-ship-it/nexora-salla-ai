@@ -2,7 +2,7 @@ export default function AICampaign() {
   return (
     <div
       style={{
-        background: "#0F0F1A",
+        backgroundColor: "#0F0F1A",
         minHeight: "100vh",
         color: "white",
         padding: "40px",
@@ -13,7 +13,7 @@ export default function AICampaign() {
       </h1>
 
       <p style={{ marginTop: "20px", color: "#aaa" }}>
-        هنا راح نضيف ميزة توليد الحملات الإعلانية بالذكاء الاصطناعي.
+        نظام إنشاء حملات إعلانية ذكية باستخدام الذكاء الاصطناعي.
       </p>
     </div>
   );
