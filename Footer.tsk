@@ -1,0 +1,19 @@
+const Footer = () => {
+  return (
+    <footer className="border-t border-border/50 py-8" dir="rtl">
+      <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="flex items-center gap-2">
+          <div className="w-6 h-6 rounded bg-primary flex items-center justify-center font-bold text-primary-foreground text-xs">
+            N
+          </div>
+          <span className="font-semibold text-gradient">NEXORA</span>
+        </div>
+        <p className="text-sm text-muted-foreground">
+          © 2024 NEXORA. جميع الحقوق محفوظة.
+        </p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
